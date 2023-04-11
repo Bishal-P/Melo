@@ -16,7 +16,7 @@ You can download the full project as a zip file and extract in a single folder t
 
 Install the libraries first before running----
 
-1. download Python3 in you system.
+1. download [Python3](https://www.python.org/downloads/) in you system.
 2. Run the below commands in terminal.
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install packages.
@@ -35,19 +35,24 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package
 
 1. Download the zip file.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![zip](https://user-images.githubusercontent.com/120594033/231152197-51511d5b-f9d7-4fa2-b27a-a019077ad68c.png)
+
 
 2. Extract all files in a folder.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![extract_all](https://user-images.githubusercontent.com/120594033/231152404-52877c53-c3a0-493d-a800-05eb26210d3c.png)
+
 
 3. Open the folder and open the terminal by right click.
+![open_in_termianal](https://user-images.githubusercontent.com/120594033/231152519-b0f6b604-051d-4cec-9eff-4b3db8863fec.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
 
 4. Type the exact command.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![terminal](https://user-images.githubusercontent.com/120594033/231152694-cb38d40a-8466-40cd-aba1-e6fafa112d2d.png)
+
+
 ## Features
 
 - Auto search all the songs available in the system
