@@ -44,8 +44,8 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package
 
 
 3. Open the folder and open the terminal by right click.
-![open_in_termianal](https://user-images.githubusercontent.com/120594033/231152519-b0f6b604-051d-4cec-9eff-4b3db8863fec.png)
 
+![open_in_termianal](https://user-images.githubusercontent.com/120594033/231152519-b0f6b604-051d-4cec-9eff-4b3db8863fec.png)
 
 
 4. Type the exact command.
