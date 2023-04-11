@@ -6,7 +6,8 @@ Melo is a desktop software or a desktop music player programmed in python3 usign
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Screenshot 2023-04-11 152815](https://user-images.githubusercontent.com/120594033/231132274-39d35ff6-08ff-4d84-818e-d0cb0618ea59.png)
+
 
 
 ## Libraries Installation
