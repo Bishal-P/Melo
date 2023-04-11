@@ -1,7 +1,7 @@
 
-# Melo
+# 🎺 Melo 🎺
 
-Melo is a desktop software or a desktop music player programmed in python3 usign Tkinter and essential libraries.
+- Melo is a desktop software or a desktop music player programmed in python3 usign Tkinter and essential libraries.
 
 
 ## Screenshots
@@ -10,7 +10,7 @@ Melo is a desktop software or a desktop music player programmed in python3 usign
 
 
 
-## Libraries Installation
+## Libraries Installation💿💿
 
 You can download the full project as a zip file and extract in a single folder to view the demo.
 
@@ -28,6 +28,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package
   pip install eyed3
   pip install io
   pip install pillow
+  pip install customtkinter
 
 ```
     
