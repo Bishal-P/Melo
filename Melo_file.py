@@ -197,18 +197,19 @@ def timer_settings():
 def play1():
 	global starting_time,songs_list,list_of_tracks,current_song,fav_heart,songs_list_without_index,length_of_songsList
 	if starting_time==0:
-		songs_list=[]
-		songs_list_without_index=[]
-		length_of_songsList=0
-		cur.execute("select * from melo_dat")
-		for i in cur:
-			songs_list_without_index.append(i[0])
-			songs_list.append(i[1])
-			fav_heart.append(i[2])
-		length_of_songsList=len(songs_list)
-		for i in range(length_of_songsList):
-			a=str(i+1)+". "+songs_list_without_index[i]
-			list_of_tracks.insert(i,str(i+1)+". "+songs_list_without_index[i])
+		if not list_of_tracks.get(0):
+			songs_list=[]
+			songs_list_without_index=[]
+			length_of_songsList=0
+			cur.execute("select * from melo_dat")
+			for i in cur:
+				songs_list_without_index.append(i[0])
+				songs_list.append(i[1])
+				fav_heart.append(i[2])
+			length_of_songsList=len(songs_list)
+			for i in range(length_of_songsList):
+				a=str(i+1)+". "+songs_list_without_index[i]
+				list_of_tracks.insert(i,str(i+1)+". "+songs_list_without_index[i])
 		try:
 			mixer.music.load(songs_list[0])
 			mixer.music.play()	
@@ -401,19 +402,20 @@ def library_songs():
 		pass
         
 def add_favourite():
-	global songs_list,current_index
+	global songs_list_without_index,current_index
+	y=0
 	try:
-		a=songs_list[current_index]
+		a=songs_list_without_index[current_index]
 	except:
 		a=list_for_most_played_buttons[current_index][1]
-	cur.execute(f"select favourite from melo_dat where songs_with_path='{a}'")
+	cur.execute(f"select favourite from melo_dat where songs_without_path='{a}'")
 	for i in cur:
 		y=i[0]
 	if y==0:
-		cur.execute(f"update melo_dat set favourite=1 where songs_with_path='{a}'")
+		cur.execute(f"update melo_dat set favourite=1 where songs_without_path='{a}'")
 		favourite_heart.config(image=Photo_red_heart) 
 	else:
-		cur.execute(f"update melo_dat set favourite=0 where songs_with_path='{a}'")
+		cur.execute(f"update melo_dat set favourite=0 where songs_without_path='{a}'")
 		favourite_heart.config(image=Photo_white_heart) 
 	con.commit()
 	root.update()
@@ -664,6 +666,9 @@ def insert_songs():
 	for i in songs_list_without_index:
 		list_of_tracks.insert(j,str(j+1)+". "+i)
 		j+=1
+		cur.execute(f"select favourite from melo_dat where songs_without_path='{i}'")
+		for l in cur:
+				fav_heart.append(l[0])
 	length_of_songsList=len(songs_list)
 
 def check(value):
