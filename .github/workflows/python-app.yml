@@ -31,7 +31,7 @@ jobs:
         sudo pip install tinytag
         sudo pip install pyautogui
         sudo pip install eyed3
-        sudo pip install io
+        sudo pip install Python-IO
         sudo pip install pillow
         sudo pip install customtkinter
         sudo pip install flake8 pytest
