@@ -27,14 +27,14 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pygame
-        apt install tkinter
-        pip install tinytag
-        pip install pyautogui
-        pip install eyed3
-        pip install io
-        pip install pillow
-        pip install customtkinter
-        pip install flake8 pytest
+        sudo apt install tkinter
+        sudo pip install tinytag
+        sudo pip install pyautogui
+        sudo pip install eyed3
+        sudo pip install io
+        sudo pip install pillow
+        sudo pip install customtkinter
+        sudo pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
