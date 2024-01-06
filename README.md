@@ -22,11 +22,11 @@ Install the libraries first before running----
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install packages.
 ```bash
   pip install pygame
-  pip install tkinter
+  pip install tk
   pip install tinytag
   pip install pyautogui
   pip install eyed3
-  pip install io
+  pip install Python-IO
   pip install pillow
   pip install customtkinter
 
